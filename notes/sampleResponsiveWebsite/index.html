@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Website with Dropdown and Footer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" id="logo">
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Services</a>
+          <div class="dropdown-content">
+            <a href="#web-development">Web Development</a>
+            <a href="#cybersecurity">Cybersecurity</a>
+            <a href="#mentorship">Mentorship</a>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Our Responsive Website</h1>
+    <p>Your go-to platform for tech learning and mentorship.</p>
+    <button onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We provide cutting-edge courses in coding, cybersecurity, and software engineering.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <p>Join our programs for personalized learning experiences and mentorship opportunities.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out for more information or questions.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>We offer a range of tech-focused courses, including coding, cybersecurity, and software engineering.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <p>Email: info@techschool.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Tech St, City, State</p>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa fa-github" style="font-size:48px;"></i></a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2025 Your Company | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
